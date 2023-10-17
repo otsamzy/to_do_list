@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    padding-top: 5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    background-color: white;
+    margin-inline: auto;
+    padding: 4em;
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px rgb(221, 218, 218), 3px 3px 4px rgba(0, 0, 0, .4);
+
+
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.forms {
+    margin-top: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.alert_success,
+.alert_danger {
+    position: absolute;
+    top: -90px;
+    padding-block: .2em;
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 300;
+    left: 0;
+    width: 100%;
+    background-color: #cce6cc;
+    color: #008000;
+
+}
+
+.alert_danger {
+    color: #ff0000;
+    background-color: #ffe6e6;
+}
+
+.forms input {
+
+    border-radius: 5px 0 0 5px;
+    border: none;
+    background-color: rgb(255, 253, 253);
+    font-size: 1.5rem;
+    height: 50px;
+    padding-left: 20px;
+    box-shadow: inset -3px -3px 10px rgba(225, 225, 225, .6), inset 3px 3px 10px rgba(0, 0, 0, .06);
+    outline: none;
+    flex: 4;
+}
+
+.submit_btn {
+    background-color: skyblue;
+    height: 50px;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    border: none;
+    padding: 1rem;
+    line-height: 2px;
+    border-radius: 0 5px 5px 0;
+    flex: 1;
+    cursor: pointer;
+
+}
+
+.section_center {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.List_container {
+    list-style: none;
+
+}
+
+.List_container li {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_container svg {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.edit {
+    color: rgb(105, 172, 5);
+    margin-right: 10px;
+}
+
+.delete {
+    color: red;
+}
+
+
+.clear {
+    color: red;
+    background-color: transparent;
+    font-size: 1.5rem;
+    margin-top: 1em;
+    border: solid 2px transparent;
+    outline: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: .5em 1em;
+    transition: all .25s linear;
+
+}
+
+.clear:hover {
+    border-color: red;
+
+}
+
+@media screen and (min-width:960px) {
+    .container {
+        max-width: 700px;
+    }
+}
